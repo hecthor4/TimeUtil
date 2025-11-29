@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background: #e5ebf2;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 15px;
+    font-size: 28px;
+    color: #333;
+}
+
+.recordatorio {
+    margin: 15px auto;
+    padding: 18px;
+    width: 85%;
+    background: white;
+    font-size: 22px;
+    border-radius: 4px;
+    text-align: left;
+    border-left: 5px solid #7eb5d6;
+}
+
+.error {
+    background: #ffbfbf;
+    border-left: 5px solid #d9534f;
+}
+
+.container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+input, select, button {
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid #999;
+}
+
+input {
+    width: 320px;
+}
+
+button {
+    background: #90c2e7;
+    border: none;
+    cursor: pointer;
+    padding: 12px 26px;
+}
+
+button:hover {
+    background: #76aed1;
+}

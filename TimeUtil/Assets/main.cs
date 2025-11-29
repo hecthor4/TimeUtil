@@ -50,8 +50,6 @@ public class main : MonoBehaviour
 
     public void CheckForDays()
     {
-        Debug.Log(month_dd.value);
-
         int daysInMonth = DateTime.DaysInMonth(year_dd.value, Mathf.Clamp(month_dd.value, 1, 12) + 1);
         var options = new List<string>(daysInMonth);
         for (int d = 1; d <= daysInMonth; d++)
@@ -68,6 +66,6 @@ public class main : MonoBehaviour
     {
         GameObject newTimestand = Instantiate(timePrefab, prefabPos);
         TimestandBehaviour timestandBehaviour_ins = newTimestand.GetComponent<TimestandBehaviour>();
-        timestandBehaviour_ins.ChangeData(inputField.name, month_dd.value, day_dd.value, year_dd.value);
+        timestandBehaviour_ins.ChangeData(inputField.text, day_dd.value, month_dd.value, year_dd.value);
     }
 }

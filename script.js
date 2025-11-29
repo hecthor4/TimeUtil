@@ -1,4 +1,4 @@
-const diaSel = document.getElementById("dia");
+const diaSel = document.getElementById("día");
 const mesSel = document.getElementById("mes");
 const añoSel = document.getElementById("año");
 const btn = document.getElementById("crear");
